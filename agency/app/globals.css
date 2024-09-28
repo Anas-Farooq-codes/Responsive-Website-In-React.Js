@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --color-bg-1: #181818;
+  --color-bg-2: #212121;
+  --color-bg-3: #252252;
+  --color-bg-4: #323232;
+  --color-border-1: #323232;
+  --color-border-2: #2a2a2a;
+}
+
+body {
+
+  background-color: var(--color-bg-1);
+  @apply text-gray-300
+}
+
+h1 {
+
+  @apply text-3xl font-bold text-white;
+}
