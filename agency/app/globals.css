@@ -22,3 +22,61 @@ h1 {
 
   @apply text-3xl font-bold text-white;
 }
+
+.gradient-purple {
+
+display: inline-block;
+  background: radial-gradient(80.97% 80.37% at 56.01% 19.03%, rgb(151, 89, 245) 0%, 
+  rgb(114, 99, 243) 99.23%)
+}
+
+.cta-button {
+
+  @apply inline-block px-8 py-4 text-white font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 rounded-[2rem] overflow-hidden;
+}
+
+.blob {
+  position: absolute;
+  bottom: -4rem;
+  right: -3.5rem;
+  width: 6rem;
+  height: 6rem;
+  background: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0.5;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+
+.cta-button:hover .blob {
+  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+}
+
+.cta-button:hover {
+
+  @apply bg-gradient-to-r from-purple-600 to-indigo-600;
+}
+
+.mouse-animation {
+
+  @apply w-[38px] h-[68px] border rounded-full animate-bounce
+}
+
+/* Media Queries  */
+
+.mq-sections {
+
+  @apply px-6 md:px-8 lg:px-16 xl:px-[18rem];
+}
+
