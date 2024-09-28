@@ -1,11 +1,21 @@
-import { search, arrowRight } from '@/utils/icons';
+"use client";
+import { search,  email, phone, arrowRight } from '@/utils/icons';
 import { navLinks } from '@/utils/utils';
 import Link from 'next/link'; 
 import Image from 'next/image'; 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Hero_Section() {
     const arr = Array(4).fill(0);
+    const [navOpen, setNavOpen] = React.useState(false);
+
+const  navX = {
+  hidden: { x: "-100%" },
+  visible: { x: 0},
+
+};
+
   return (
     <section className='relative h-full w-full'>
         <div className="absolute w-full h-[100vh] top-0 flex justify-evenly z-[-1]">
@@ -16,7 +26,7 @@ function Hero_Section() {
           ))}
         </div>
 
-        <nav className='px-[18rem] fixed md:relative top-0 z-50 w-full shadow-md md:shadow-none flex justify-between bg-1 border-b border-color-1 mq-sections'> 
+        <nav className='px-[18rem] fixed md:relative top-0 z-50 w-full shadow-md md:shadow-none flex items-center justify-between bg-1 border-b border-color-1 mq-sections'> 
         <div className='flex items-center gap-2 py-5 lg:py-0'>
             <img src="/Cody-Nerds.webp" alt="logo" width={80} height={80} />
             <h1>Anas Codes</h1>
@@ -36,6 +46,15 @@ function Hero_Section() {
 <button className='hidden lg:inline-block py-6 px-10 text-2xl text-gray-400 border-x border-color-1 hover:bg-2 transition-all duration-200 ease-in-out'>
   {search}
 </button>
+
+{/* Burger Menu for Smaller Screens  */}
+
+<div className='lg:hidden flex flex-col gap-1 cursor-pointer' onClick={() => setNavOpen(!navOpen)}>
+  <div className='w-8 h-1 bg-purple-500 rounded-md'></div>
+  <div className='w-8 h-1 bg-purple-500 rounded-md'></div>
+  <div className='w-8 h-1 bg-purple-500 rounded-md'></div>
+  <div className='w-8 h-1 bg-purple-500 rounded-md'></div>
+</div>
         </nav>
 
         <div className='mt-[7rem] md:mt-[7rem] px-[18rem] mq-sections'>
@@ -61,7 +80,39 @@ At CodyNerds, we specialize in creating powerful digital products that drive gro
 
 {/* Nav For Smaller Screens  */}
 
-<div className="px-8 fixed z-50 flex flex-col gap-8 left-0 top-0 w-[18rem] h-[100vh] bg-2 lg:hidden"></div>
+<motion.div className="px-8 fixed z-50 flex flex-col gap-8 left-0 top-0 w-[18rem] h-[100vh] bg-2 lg:hidden"
+initial="hidden" animate={navOpen ? "visible" : "hidden"}
+transition={{ duration: 0.3 }}
+variants={navX}
+>
+<div className='flex items-center gap-2 py-5 lg:py-0'>
+            <img src="/Cody-Nerds.webp" alt="logo" width={80} height={80} />
+            <h1>Anas Codes</h1>
+        </div>
+      <nav className='bg-3 px-4 py-4 rounded-md'>
+      <ul className='flex flex-col gap-4 text-white font-medium'>
+        {navLinks.map((link, i) => {
+            return (
+              <li key={i}>
+                <Link href={link.url} className="inline-block w-full hover:text-purple-500 transition-all duration-200 ease-in-out">
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+      <div className='flex flex-col gap-2'>
+<p className='flex items-center gap-2 text-gray-300 '>
+  {phone} 
+  +92 317 965 7473
+</p>
+<p className='flex items-center gap-2 text-gray-300 font-medium'>
+  {email}
+  anasfarooq2006@gmail.com
+</p>
+      </div>
+</motion.div>
 
       </section>
   );
