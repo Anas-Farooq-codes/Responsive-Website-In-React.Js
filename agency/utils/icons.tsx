@@ -16,3 +16,4 @@ export const certificate = <i className="fa-regular fa-sun"></i>;
 export const circle = <i className="fa-solid fa-circle-dot"></i>;
 export const phone = <i className="fa-solid fa-phone"></i>;
 export const email = <i className="fa-solid fa-envelope"></i>;
+export const building = <i className="fa-solid fa-building"></i>;

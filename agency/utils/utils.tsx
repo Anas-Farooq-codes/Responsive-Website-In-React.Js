@@ -1,4 +1,4 @@
-import { desktop, growth, innovation } from "./icons";
+import { desktop, growth, innovation, building } from "./icons";
 interface IService {
 title: string;
 icon: any;
@@ -67,7 +67,7 @@ export const services: IService[] = [
     },
     {
         title: "Innovative Product Development",
-        icon: innovation,
+        icon: building,
         description:
           "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
         bulletPoints: [
