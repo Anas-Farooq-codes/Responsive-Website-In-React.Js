@@ -65,4 +65,40 @@ export const services: IService[] = [
         "Focus on user needs and market demands",
       ],
     },
+    {
+        title: "Innovative Product Development",
+        icon: innovation,
+        description:
+          "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+        bulletPoints: [
+          "End-to-end product design and development",
+          "Rapid prototyping and iteration",
+          "Integration of cutting-edge technologies",
+          "Focus on user needs and market demands",
+        ],
+      },
+      {
+        title: "Innovative Product Development",
+        icon: innovation,
+        description:
+          "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+        bulletPoints: [
+          "End-to-end product design and development",
+          "Rapid prototyping and iteration",
+          "Integration of cutting-edge technologies",
+          "Focus on user needs and market demands",
+        ],
+      },
+      {
+        title: "Innovative Product Development",
+        icon: innovation,
+        description:
+          "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+        bulletPoints: [
+          "End-to-end product design and development",
+          "Rapid prototyping and iteration",
+          "Integration of cutting-edge technologies",
+          "Focus on user needs and market demands",
+        ],
+      },
   ];
