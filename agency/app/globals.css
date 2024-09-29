@@ -18,6 +18,25 @@ body {
   @apply text-gray-300
 }
 
+body::-webkit-scrollbar {
+
+  width: 7px
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-bg-4);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+body::-webkit-scrollbar-track {
+
+  background-color: var(--color-bg-2);
+}
+
 h1 {
 
   @apply text-3xl font-bold text-white;
@@ -34,6 +53,8 @@ display: inline-block;
 
   @apply inline-block px-8 py-4 text-white font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 rounded-[2rem] overflow-hidden;
 }
+
+
 
 .blob {
   position: absolute;
