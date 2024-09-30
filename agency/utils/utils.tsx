@@ -1,4 +1,12 @@
 import { desktop, growth, innovation, building } from "./icons";
+import { Bungee_Outline } from "next/font/google";
+
+const bungee = Bungee_Outline ({
+
+  subsets: ["latin"],
+  weight: ["400"],
+})
+
 interface IService {
 title: string;
 icon: any;
@@ -102,3 +110,24 @@ export const services: IService[] = [
         ],
       },
   ];
+
+  export const aboutStats = [
+    {
+      title: "Happy Clients",
+      count: "50+",
+      ff: bungee.className,
+    },
+    {
+      title: "Projects Completed",
+      count: "100+",
+    },
+    {
+      title: "Years Experience",
+      count: "04",
+      ff: bungee.className,
+    },
+    {
+      title: "Team Members",
+      count: "05",
+    },
+  ]

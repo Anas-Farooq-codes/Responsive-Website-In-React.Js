@@ -12,7 +12,7 @@ function Services_Section() {
             {services.map((service, index) => {
 
                 return <div key={index} className='relative p-10 flex flex-col text-white border border-color-1 rounded-xl'>
-                    <div className='bg-2 self-start w-[5rem] h-[5rem] flex justify-center items-center rounded-xl border-2 border-color-2 shadow-sm  transition-all duration-[300ms] hover:bg-purple-700
+                    <div className='bg-2 self-start w-[5rem] h-[5rem] flex justify-center items-center rounded-xl border-2 border-color-2 shadow-sm  transition-all duration-[300ms] hover:bg-purple-500
 }'>
                         <span className='text-5xl text-gray-300'>{service.icon}</span>
                     </div>
