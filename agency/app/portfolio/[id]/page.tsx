@@ -25,8 +25,8 @@ function page({ params }: Props) {
   }
 
   return (
-    <section>
-      <div className="py-[5rem] mq-sections">
+
+      <section className="py-[5rem] mq-sections">
         <Title title={portfolio.title} label={portfolio.category} />
         <div className="mt-[5rem]">
           <Image
@@ -119,8 +119,7 @@ function page({ params }: Props) {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }
 

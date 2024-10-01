@@ -29,11 +29,11 @@ details: {
 const portfolios: IPortfolio[] = [
     {
         id: 1,
-        category: "UI/UX Design",
-        title: "SnippetMaster",
-        subtitle: "Effortlessly manage and share your code snippets",
-        date: "June 2023",
-        technologiesUsed: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+        category: "Web Development",
+        title: "PIXVAULT",
+        subtitle: "PixVault - A large media stock library",
+        date: "Sep 2024",
+        technologiesUsed: ["HTML", "CSS", "JavaScript", "Firebase", "Pexels"],
         previewImage: imageSm1,
         link: "snippetmaster",
         bgColor: "bg-[#C6AFA2]",
