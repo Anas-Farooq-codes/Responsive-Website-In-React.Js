@@ -47,11 +47,15 @@ function page({ params }: Props) {
 
             <div className="py-6 grid grid-cols-1 md:grid-cols-[320px_1fr] border-b-2">
               <div>
-                <h3>Client:</h3>
-                <p className="text-gray-300">{portfolio.client}</p>
+                <h3>What Did I learn:</h3>
+                <ul className="text-gray-300 list-disc list-inside">
+                    {portfolio.lessonsLearned?.map((challenge, index) => (
+                      <li key={index}>{challenge}</li>
+                    ))}
+                  </ul>
               </div>
-              <div className="mt-8 md:pl-16 md:border-l-2">
-                <h3 className="text-gray-300 font-medium">Project Details</h3>
+              <div className="mt-8 md:mt-0 md:pl-16 md:border-l-2">
+                <h3 className="mt-8 md:mt-0 text-gray-300 font-medium">Project Details</h3>
                 <div className="mt-2 md:mt-8 flex flex-col gap-4">
                   {portfolio.details.paragraphs.map((detail, index) => (
                     <p key={index} className="text-gray-300">
@@ -72,8 +76,8 @@ function page({ params }: Props) {
                     ))}
                   </ul>
                 </div>
-                <div className="md:pl-16 md:border-l-2">
-                  <h3 className="text-gray-300 font-medium">Project Features</h3>
+                <div className="md:mt-0 md:pl-16 md:border-l-2">
+                  <h3 className="mt-8 md:mt-0 text-gray-300 font-medium">Project Features</h3>
                   <ul className="mt-8 flex flex-col gap-4">
                     {portfolio.details.bulletPoints.map((bullet, index) => (
                       <li

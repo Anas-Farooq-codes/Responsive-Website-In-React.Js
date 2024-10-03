@@ -1,8 +1,16 @@
 import { StaticImageData } from "next/image";
 import imageSm1 from "@/public/images/image--portfolio-sm-1.png";
+import imageSm2 from "@/public/images/image--portfolio-sm-2.png";
 import imageChat1 from "@/public/images/image--chat-1.png";
 import imageTodo1 from "@/public/images/image--todo-1.png";
 import imageWeather from "@/public/images/image--weather.png";
+import pixvaultImage1 from "@/public/images/pixvault--portfolio-1.png";
+import pixvaultImage2 from "@/public/images/pixvault--portfolio-2.png";
+import pixvaultImage3 from "@/public/images/pixvault--portfolio-3.png";
+import codynerdsImage1 from "@/public/images/codynerds--portfolio-1.png";
+import codynerdsImage2 from "@/public/images/codynerds--portfolio-2.png";
+import codynerdsImage3 from "@/public/images/codynerds--portfolio-3.png";
+
 
 
 interface IPortfolio {
@@ -14,7 +22,7 @@ interface IPortfolio {
     previewImage: StaticImageData;
     bgColor?: string;
     technologiesUsed?: string[];
-    client?: string;
+    lessonsLearned?: string[];
     projectDetails?: string;
     link: string;
 details: {
@@ -29,40 +37,39 @@ details: {
 const portfolios: IPortfolio[] = [
     {
         id: 1,
-        category: "Web Development",
+        category: "Stock Media App",
         title: "PIXVAULT",
         subtitle: "PixVault - A large media stock library",
         date: "Sep 2024",
         technologiesUsed: ["HTML", "CSS", "JavaScript", "Firebase", "Pexels"],
         previewImage: imageSm1,
-        link: "snippetmaster",
-        bgColor: "bg-[#C6AFA2]",
-        client: "Clean Code Inc.",
+        link: "pixvault",
+        bgColor: "bg-[#6fcf97]",
+        lessonsLearned: ["API Implementation", "DOM Manipulation", "Async/Await", "Promises", "Code Structure"],
         details: {
           paragraphs: [
-            "SnippetMaster is an app designed for developers to easily save, manage, and share their code snippets. The app offers full CRUD functionality, allowing users to create, read, update, and delete snippets as needed. Additionally, users can explore and save snippets shared by other creators.",
-            "The UI/UX design focused on creating a clean and intuitive interface that allows developers to quickly access their snippets, search for new ones, and manage their collections efficiently. The app supports tagging and categorizing snippets, making it easier to find the right piece of code when needed.",
+            "PIXVAULT is a free stock media platform, powered by Pexels, where users can explore and download high-quality photos and videos. It also features a unique color search functionality that allows users to discover media based on a specific color. The platform is fully responsive, providing a seamless experience across all devices.",
           ],
           bulletPoints: [
-            "Full CRUD functionality for snippet management",
-            "User-friendly interface with tagging and categorization",
-            "Ability to save and explore snippets from other creators",
-            "Responsive design for both desktop and mobile",
+            "Search Photos and Videos: Explore a vast collection of stock media.",
+            "Favorites: Save photos and videos to easily revisit them later.",
+            "Color Search: Find media by selecting any color.",
+            "Optimized for all devices (mobile, tablet, and desktop).",
           ],
-          images: [imageSm1, imageSm1, imageSm1],
-          footer: "Try SnippetMaster: [SnippetMaster App](https://www.example.com)",
+          images: [pixvaultImage1, pixvaultImage2, pixvaultImage3],
+          footer: "Try PIXVAULT: [Stock Media App] (https://www.example.com)",
         },
       },
       {
         id: 2,
-        category: "Branding",
-        title: "Luxury Fashion Brand",
+        category: "Web Development",
+        title: "Movie App",
         subtitle: "Redefining luxury with a modern touch",
         date: "May 2023",
         previewImage: imageWeather,
         link: "luxury-fashion-brand",
-        bgColor: "bg-[#6fcf97]",
-        client: "Elegance Fashion",
+        bgColor: "bg-[#C6AFA2]",
+        lessonsLearned: ["API Implementation", "DOM Manipulation", "Async/Await", "Promises", "Code Structure"],
         details: {
           paragraphs: [
             "We partnered with a high-end fashion brand to create a new identity that reflects luxury and elegance. Our branding strategy focused on minimalist design elements, sophisticated typography, and a monochrome color palette.",
@@ -80,39 +87,39 @@ const portfolios: IPortfolio[] = [
       },
       {
         id: 3,
-        category: "Web Development",
-        title: "ChatApp",
-        subtitle: "A desktop messaging app for seamless communication",
-        date: "April 2023",
-        previewImage: imageChat1,
-        link: "chatapp",
-        bgColor: "bg-[#E4E7D8]",
-        client: "Tech Solutions Ltd.",
+        category: "Community Website",
+        title: "Cody Nerds",
+        subtitle: "Cody Nerds - Let's build our network strong",
+        date: "April 2024",
+        previewImage: imageSm2,
+        link: "Cody-Nerds",
+        bgColor: "bg-[#F0DB4F]",
+        lessonsLearned: ["Parallax Effect", "UI/UX", "SEO Optimization", "Code Structure"],
         details: {
           paragraphs: [
-            "ChatApp is a desktop messaging application similar to WhatsApp, designed for seamless communication across devices. The app supports real-time messaging, file sharing, and group chats, making it a comprehensive tool for both personal and professional use.",
-            "Our team focused on delivering a highly responsive and intuitive user experience, with features like message encryption, notifications, and quick replies. The app is optimized for performance, ensuring fast and reliable communication even with large groups.",
+            "Cody Nerds stands as a community hub for developers to connect, collaborate, and grow together. Our mission is to provide a platform where coding enthusiasts can showcase projects, share knowledge, and build lasting connections. Join us and be part of a vibrant community where innovation knows no bounds.",
+            
           ],
           bulletPoints: [
-            "Real-time messaging with file sharing capabilities",
-            "Group chat support with notifications and quick replies",
-            "End-to-end encryption for secure communication",
-            "Optimized performance for desktop environments",
+            "User-Friendly Interface: Intuitive design for easy navigation.",
+            "Engaging Hero Section: Captivating intro with a strong CTA to join.",
+            "Community Benefits: Highlights networking, knowledge sharing, and resources.",
+            "FAQ Section: Answers common questions about joining and community expectations.",
           ],
-          images: [imageSm1, imageSm1, imageSm1],
-          footer: "Learn more about ChatApp: [ChatApp](https://www.example.com)",
+          images: [codynerdsImage3, codynerdsImage2, codynerdsImage1],
+          footer: "Learn more about Cody Nerds: [Community](https://www.example.com)",
         },
       },
       {
         id: 4,
-        category: "UI/UX Design",
+        category: "Weather App",
         title: "Finance Manager Desktop App",
         subtitle: "Managing finances with ease and precision",
         date: "March 2023",
         previewImage: imageTodo1,
-        link: "finance-manager",
+        link: "Weather App",
         bgColor: "bg-[#F0DB4F]",
-        client: "Money Matters Inc.",
+        lessonsLearned: ["API Implementation", "DOM Manipulation", "Async/Await", "Promises", "Code Structure"],
         details: {
           paragraphs: [
             "The Finance Manager desktop app is designed to help users manage their personal and business finances with ease. It offers features like expense tracking, budget planning, and financial reporting, all within a user-friendly interface.",
