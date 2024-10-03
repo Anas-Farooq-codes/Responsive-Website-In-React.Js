@@ -1,15 +1,21 @@
 import { StaticImageData } from "next/image";
 import imageSm1 from "@/public/images/image--portfolio-sm-1.png";
 import imageSm2 from "@/public/images/image--portfolio-sm-2.png";
-import imageChat1 from "@/public/images/image--chat-1.png";
-import imageTodo1 from "@/public/images/image--todo-1.png";
-import imageWeather from "@/public/images/image--weather.png";
+import imageSm3 from "@/public/images/image--portfolio-sm-3.png";
+import imageSm4 from "@/public/images/image--portfolio-sm-4.png";
 import pixvaultImage1 from "@/public/images/pixvault--portfolio-1.png";
 import pixvaultImage2 from "@/public/images/pixvault--portfolio-2.png";
 import pixvaultImage3 from "@/public/images/pixvault--portfolio-3.png";
 import codynerdsImage1 from "@/public/images/codynerds--portfolio-1.png";
 import codynerdsImage2 from "@/public/images/codynerds--portfolio-2.png";
 import codynerdsImage3 from "@/public/images/codynerds--portfolio-3.png";
+import cinematrixImage1 from "@/public/images/cinematrix--portfolio-1.png";
+import cinematrixImage2 from "@/public/images/cinematrix--portfolio-2.png";
+import cinematrixImage3 from "@/public/images/cinematrix--portfolio-3.png";
+import horizonImage1 from "@/public/images/horizon--portfolio-1.png";
+import horizonImage2 from "@/public/images/horizon--portfolio-2.png";
+import horizonImage3 from "@/public/images/horizon--portfolio-3.png";
+
 
 
 
@@ -41,7 +47,7 @@ const portfolios: IPortfolio[] = [
         title: "PIXVAULT",
         subtitle: "PixVault - A large media stock library",
         date: "Sep 2024",
-        technologiesUsed: ["HTML", "CSS", "JavaScript", "Firebase", "Pexels"],
+        technologiesUsed: ["HTML", "CSS", "JavaScript", "Firebase", "Pexels (API)"],
         previewImage: imageSm1,
         link: "pixvault",
         bgColor: "bg-[#6fcf97]",
@@ -62,27 +68,31 @@ const portfolios: IPortfolio[] = [
       },
       {
         id: 2,
-        category: "Web Development",
-        title: "Movie App",
-        subtitle: "Redefining luxury with a modern touch",
-        date: "May 2023",
-        previewImage: imageWeather,
-        link: "luxury-fashion-brand",
-        bgColor: "bg-[#C6AFA2]",
+        category: "Movie App",
+        title: "Cinematrix",
+        subtitle: "Cinematrix - The world's most popular movie app.",
+        date: "June 2024",
+        technologiesUsed: ["HTML", "CSS", "JavaScript", "Firebase", "TMDB (API)", "Postman"],
+        previewImage: imageSm3,
+        link: "movie-app",
+        bgColor: "bg-[#97233F]",
         lessonsLearned: ["API Implementation", "DOM Manipulation", "Async/Await", "Promises", "Code Structure"],
         details: {
           paragraphs: [
-            "We partnered with a high-end fashion brand to create a new identity that reflects luxury and elegance. Our branding strategy focused on minimalist design elements, sophisticated typography, and a monochrome color palette.",
-            "The project also included the design of marketing collateral, including business cards, packaging, and a brand guideline document to ensure consistency across all platforms.",
+            "Cinematrix is a movie app where you can check out all upcoming movies, trending movies of the week, and top-rated movies. You can also view cast details, director, release date, PG rating, and all the trailers for each movie. Moreover, you can search for any movie details you want. Additionally, there's a sidebar where you'll find all genre-related movies and language-sorted movies. And, yes, this website is fully responsive!",
+            
           ],
           bulletPoints: [
-            "Minimalist logo design",
-            "Sophisticated typography",
-            "Monochrome color palette",
-            "Consistent brand guidelines",
+            "Upcoming Movies: Stay updated with the latest releases and plan your movie nights in advance.",
+            "Trending Movies: Discover what's hot in the world of cinema with our weekly trending movies section.",
+            "Top Rated Movies: Explore the highest-rated movies curated just for you.",
+            "Detailed Information: Get insights into each movie, including cast details, directors, release dates, PG ratings, and trailers.",
+            "Search Functionality: Easily find any movie details you desire with our intuitive search feature.",
+            "Genre and Language Sorting: Navigate through genre-related and language-sorted movies effortlessly.",
+            "Fully Responsive: Enjoy a seamless viewing experience across all devices, from desktops to mobile phones.",
           ],
-          images: [imageSm1, imageSm1, imageSm1],
-          footer: "Discover more: [Luxury Fashion Brand](https://www.example.com)",
+          images: [cinematrixImage1, cinematrixImage2, cinematrixImage3],
+          footer: "Live link: [Movie App](https://www.example.com)",
         },
       },
       {
@@ -91,6 +101,7 @@ const portfolios: IPortfolio[] = [
         title: "Cody Nerds",
         subtitle: "Cody Nerds - Let's build our network strong",
         date: "April 2024",
+        technologiesUsed: ["HTML", "CSS", "JavaScript", "Firebase"],
         previewImage: imageSm2,
         link: "Cody-Nerds",
         bgColor: "bg-[#F0DB4F]",
@@ -106,34 +117,35 @@ const portfolios: IPortfolio[] = [
             "Community Benefits: Highlights networking, knowledge sharing, and resources.",
             "FAQ Section: Answers common questions about joining and community expectations.",
           ],
-          images: [codynerdsImage3, codynerdsImage2, codynerdsImage1],
+          images: [codynerdsImage2, codynerdsImage3, codynerdsImage1],
           footer: "Learn more about Cody Nerds: [Community](https://www.example.com)",
         },
       },
       {
         id: 4,
         category: "Weather App",
-        title: "Finance Manager Desktop App",
-        subtitle: "Managing finances with ease and precision",
-        date: "March 2023",
-        previewImage: imageTodo1,
-        link: "Weather App",
-        bgColor: "bg-[#F0DB4F]",
+        title: "Horizon",
+        subtitle: "Horizon - Your most reliable weather app.",
+        date: "March 2024",
+        technologiesUsed: ["HTML", "CSS", "JavaScript", "Open Weather (API)", "Postman"],
+        previewImage: imageSm4,
+        link: "Horizon",
+        bgColor: "bg-[#6082B6]",
         lessonsLearned: ["API Implementation", "DOM Manipulation", "Async/Await", "Promises", "Code Structure"],
         details: {
           paragraphs: [
-            "The Finance Manager desktop app is designed to help users manage their personal and business finances with ease. It offers features like expense tracking, budget planning, and financial reporting, all within a user-friendly interface.",
-            "The design emphasizes clarity and ease of use, allowing users to quickly enter and categorize expenses, monitor budgets, and generate detailed financial reports. The app supports multiple accounts and provides insightful analytics to help users make informed financial decisions.",
+            "Horizon is a fully responsive weather app built with HTML, CSS, and JavaScript, leveraging the power of the OpenWeather API for real-time updates. The app allows users to effortlessly search for weather conditions in any city, providing detailed insights into current conditions, a 24-hour forecast, and a 5-day outlook. With features like air quality index, sunrise/sunset times, humidity levels, and more, Horizon ensures you have all the information you need to stay ahead of the weather.",
           ],
           bulletPoints: [
-            "Comprehensive expense tracking and budget planning",
-            "Detailed financial reporting with customizable analytics",
-            "User-friendly interface with support for multiple accounts",
-            "Designed for both personal and business finance management",
+            "Search Functionality: Easily check the weather of any country by searching.",
+            "Today's Highlights: Get a quick overview of the current weather conditions including air quality index, sunrise and sunset time, humidity, pressure, visibility, and feels like temperature.",
+            "Current Weather: View detailed information about the current weather.",
+            "24-Hour Weather Forecast: Check the weather forecast for the next 24 hours.",
+            "5-Day Weather Forecast: Plan ahead with a 5-day weather forecast.",
           ],
-          images: [imageSm1, imageSm1, imageSm1],
+          images: [horizonImage1, horizonImage2, horizonImage3],
           footer:
-            "Manage your finances: [Finance Manager](https://www.example.com)",
+            "Live link: [Weather App](https://www.example.com)",
         },
       },
     ];
