@@ -63,7 +63,7 @@ const portfolios: IPortfolio[] = [
             "Optimized for all devices (mobile, tablet, and desktop).",
           ],
           images: [pixvaultImage1, pixvaultImage2, pixvaultImage3],
-          footer: "Try PIXVAULT: [Stock Media App] (https://www.example.com)",
+          footer: "https://pixvault.netlify.app/",
         },
       },
       {
@@ -92,7 +92,7 @@ const portfolios: IPortfolio[] = [
             "Fully Responsive: Enjoy a seamless viewing experience across all devices, from desktops to mobile phones.",
           ],
           images: [cinematrixImage1, cinematrixImage2, cinematrixImage3],
-          footer: "Live link: [Movie App](https://www.example.com)",
+          footer: "Live link:(https://www.example.com)",
         },
       },
       {

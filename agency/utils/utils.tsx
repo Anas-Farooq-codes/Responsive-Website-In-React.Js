@@ -150,3 +150,30 @@ export const services: IService[] = [
     },
 
 ]
+
+export const awards = [
+  {
+    date: "January 2024",
+    companyLogo: "/images/logos/logo--behance.png",
+    category: "Best UX",
+    link: "https://www.behance.net/",
+  },
+  {
+    date: "June 2021",
+    companyLogo: "/images/logos/logo--awwwards.png",
+    category: "Site of the Day",
+    link: "https://www.awwwards.com/",
+  },
+  {
+    date: "March 2022",
+    companyLogo: "/images/logos/logo--dribble.png",
+    category: "Best Design",
+    link: "https://dribbble.com/",
+  },
+  {
+    date: "June 2021",
+    companyLogo: "/images/logos/logo--awwwards.png",
+    category: "Site of the Day",
+    link: "https://www.awwwards.com/",
+  },
+];
