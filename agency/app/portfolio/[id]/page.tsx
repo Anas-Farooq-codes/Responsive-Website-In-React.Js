@@ -94,8 +94,8 @@ function page({ params }: Props) {
             </div>
 
             <div>
-              <Link href={portfolio.link} className="text-blue-400">
-                <p>{portfolio.details.footer}</p>
+              <Link href={portfolio.details.footer} className="text-blue-400">
+                Check out the website
               </Link>
             </div>
 
