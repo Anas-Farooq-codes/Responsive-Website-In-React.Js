@@ -14,7 +14,7 @@
 /.next/
 /out/
 
-# production
+# productioncd ./
 /build
 
 # misc
