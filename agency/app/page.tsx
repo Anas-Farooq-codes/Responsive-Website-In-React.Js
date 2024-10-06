@@ -5,6 +5,8 @@ import Portfolio_Section from "@/Components/Sections/Portfolio_Section/Portfolio
 import Awards_Section from "@/Components/Sections/Awards_Section/Awards_Section";
 import  Scrolling_Text from "@/Components/ScrollingText/Scrolling_Text";
 import Faqs_Section from "@/Components/Sections/Faqs_Section/Faqs_Section";
+import Contact_Section from "@/Components/Sections/Contact_Section/Contact_Section";
+import Footer_Section from "@/Components/Sections/Footer_Section/Footer_Section";
 
 export default function Home() {
   return ( 
@@ -19,6 +21,10 @@ export default function Home() {
     < Portfolio_Section/>
     <Awards_Section/>
     <Faqs_Section/>
+    <Contact_Section/>
+    <Footer_Section />
+    
+    
   </main>
   );
 }

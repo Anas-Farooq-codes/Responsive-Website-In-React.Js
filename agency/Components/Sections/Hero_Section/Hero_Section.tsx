@@ -18,7 +18,7 @@ const  navX = {
 
   return (
     <section className='relative h-full w-full'>
-        <div className="absolute w-full h-[100vh] top-0 flex justify-evenly z-[-1]">
+        <div className="absolute w-full h-[100vh] top-[-120px] md:top-0 flex justify-evenly z-[-1]">
           {arr.map((_, i) => (
             <div key={i} className="relative w-[1px] h-full bg-2">
               <span className='absolute bottom-0 w-2 h-2 bg-color-2 translate-x-[-50%] rounded-full'></span>
@@ -28,8 +28,7 @@ const  navX = {
 
         <nav className='px-[18rem] fixed md:relative top-0 z-50 w-full shadow-md md:shadow-none flex items-center justify-between bg-1 border-b border-color-1 mq-sections'> 
         <div className='flex items-center gap-2 py-5 lg:py-0'>
-            <img src="/Cody-Nerds.webp" alt="logo" width={80} height={80} />
-            <h1>Anas Codes</h1>
+            <img src="/Cody-Nerds.webp" alt="logo" width={160} height={160} />
         </div>
 
         <ul className="hidden lg:flex items-center gap-9 text-white font-medium">
@@ -87,7 +86,7 @@ variants={navX}
 >
 <div className='flex items-center gap-2 py-5 lg:py-0'>
             <img src="/Cody-Nerds.webp" alt="logo" width={80} height={80} />
-            <h1>Anas Codes</h1>
+            <h1>CODY NERDS</h1>
         </div>
       <nav className='bg-3 px-4 py-4 rounded-md'>
       <ul className='flex flex-col gap-4 text-white font-medium'>

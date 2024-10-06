@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import portfolios from "@/utils/portfolio";
+import Footer_Section from "@/Components/Sections/Footer_Section/Footer_Section";
 
 interface Props {
   params: {
@@ -104,7 +105,7 @@ function page({ params }: Props) {
                 {portfolio.details.images
                   .slice(0, imagesLength - 1)
                   .map((image, index) => (
-                    <div key={index}> {/* Added key here */}
+                    <div key={index}>
                       <Image
                         src={image}
                         alt={portfolio.title}
@@ -123,7 +124,9 @@ function page({ params }: Props) {
             </div>
           </div>
         </div>
+        <Footer_Section/>
       </section>
+      
   );
 }
 

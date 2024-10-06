@@ -211,3 +211,36 @@ export const faqs = [
       "You can contact me through the contact form on my website or email me directly at anasfarooq2006@gmail.com, I look forward to connecting!",
   },
 ];
+
+
+type Link = { name: string; url?: string; email?: string; phone?: string };
+
+export const footerNavLinks: { title: string; links: Link[] }[] = [
+  {
+    title: "About Us",
+    links: [
+      { name: "Home", url: "/" },
+      { name: "Services", url: "#" },
+      { name: "About", url: "#" },
+      { name: "Portfolio", url: "#" },
+      { name: "FAQs", url: "#" },
+      { name: "Contact", url: "#" },
+    ],
+  },
+  {
+    title: "Services",
+    links: [
+      { name: "Web Development", url: "/web-development" },
+      { name: "Responsive Design", url: "/Responsive-Design" },
+      { name: "UI/UX Design", url: "/ui-ux-design" },
+      { name: "SEO", url: "/seo" },
+    ],
+  },
+  {
+    title: "Contact Info",
+    links: [
+      { name: "Email", email: "anasfarooq2006@gmail.com" },
+      { name: "Phone", phone: "+923179657473" },
+    ],
+  },
+];
