@@ -92,7 +92,7 @@ const portfolios: IPortfolio[] = [
             "Fully Responsive: Enjoy a seamless viewing experience across all devices, from desktops to mobile phones.",
           ],
           images: [cinematrixImage1, cinematrixImage2, cinematrixImage3],
-          footer: "Live link:(https://www.example.com)",
+          footer: "https://cinematrix-cn.netlify.app",
         },
       },
       {
@@ -118,7 +118,7 @@ const portfolios: IPortfolio[] = [
             "FAQ Section: Answers common questions about joining and community expectations.",
           ],
           images: [codynerdsImage2, codynerdsImage3, codynerdsImage1],
-          footer: "Learn more about Cody Nerds: [Community](https://www.example.com)",
+          footer: "https://cody-nerds.web.app/",
         },
       },
       {
@@ -145,7 +145,7 @@ const portfolios: IPortfolio[] = [
           ],
           images: [horizonImage1, horizonImage2, horizonImage3],
           footer:
-            "Live link: [Weather App](https://www.example.com)",
+            "Live link:https://weahterapp-cn.netlify.app",
         },
       },
     ];

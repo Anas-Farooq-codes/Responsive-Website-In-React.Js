@@ -4,6 +4,7 @@ import About_Section from "@/Components/Sections/About_Section/About_Section";
 import Portfolio_Section from "@/Components/Sections/Portfolio_Section/Portfolio_Section";
 import Awards_Section from "@/Components/Sections/Awards_Section/Awards_Section";
 import  Scrolling_Text from "@/Components/ScrollingText/Scrolling_Text";
+import Faqs_Section from "@/Components/Sections/Faqs_Section/Faqs_Section";
 
 export default function Home() {
   return ( 
@@ -17,6 +18,7 @@ export default function Home() {
     </div>
     < Portfolio_Section/>
     <Awards_Section/>
+    <Faqs_Section/>
   </main>
   );
 }

@@ -153,27 +153,61 @@ export const services: IService[] = [
 
 export const awards = [
   {
-    date: "January 2024",
+    date: "February 2024",
     companyLogo: "/images/logos/logo--behance.png",
     category: "Best UX",
     link: "https://www.behance.net/",
   },
   {
-    date: "June 2021",
+    date: "March 2024",
     companyLogo: "/images/logos/logo--awwwards.png",
     category: "Site of the Day",
     link: "https://www.awwwards.com/",
   },
   {
-    date: "March 2022",
+    date: "May 2024",
     companyLogo: "/images/logos/logo--dribble.png",
     category: "Best Design",
     link: "https://dribbble.com/",
   },
   {
-    date: "June 2021",
-    companyLogo: "/images/logos/logo--awwwards.png",
-    category: "Site of the Day",
-    link: "https://www.awwwards.com/",
+    date: "July 2024",
+    companyLogo: "/images/logos/logo--pinterest.png",
+    category: "Best UI",
+    link: "https://www.pinterest.com/",
+  },
+];
+
+
+export const faqs = [
+  {
+    question: "What is your primary focus as a web developer?",
+    answer:
+      "I specialize in front-end development, creating visually appealing and functional web applications. Currently, I’m enhancing my skills to become proficient in the MERN stack (MongoDB, Express, React, Node.js).",
+  },
+  {
+    question: "What types of projects are you currently working on?",
+    answer:
+      "I’m currently working on various front-end projects that blend creativity and functionality, focusing on user experience and responsive design.",
+  },
+  {
+    question: "What tools and technologies do you use?",
+    answer:
+      "I primarily work with HTML, CSS, JavaScript, and React for front-end development. As I transition into full-stack development, I’m learning MongoDB, Express, and Node.js.",
+  },
+  {
+    question: "How do you approach web development projects?",
+    answer:
+      "My approach involves understanding client needs, brainstorming creative solutions, and implementing them while ensuring a user-friendly experience. I focus on both aesthetics and functionality.",
+  },
+  {
+    question: "What are your long-term goals as a developer?",
+    answer:
+      "Yes, I’m passionate about open-source projects and actively seek opportunities to contribute. It’s a great way to collaborate with other developers and enhance my skills.",
+  },
+  {
+    question: "How can I get in touch with you?",
+    answer:
+      "You can contact me through the contact form on my website or email me directly at anasfarooq2006@gmail.com, I look forward to connecting!",
   },
 ];
