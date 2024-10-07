@@ -20,7 +20,7 @@ body {
 
 body::-webkit-scrollbar {
 
-  width: 7px
+  width: 15px
 }
 
 body::-webkit-scrollbar-thumb {
@@ -49,8 +49,10 @@ h3 {
 
 input,
 textarea {
-  @apply bg-transparent border-2 border-2 rounded-xl;
+  @apply bg-transparent border-2 border-color-2 rounded-xl;
 }
+
+
 
 .gradient-purple {
 

@@ -17,4 +17,6 @@ export const certificate = <i className="fa-regular fa-sun"></i>;
 export const circle = <i className="fa-solid fa-circle-dot"></i>;
 export const phone = <i className="fa-solid fa-phone"></i>;
 export const email = <i className="fa-solid fa-envelope"></i>;
-export const building = <i className="fa-solid fa-building"></i>;
+export const shield = <i className="fa-solid fa-shield-halved"></i>
+export const ecommerce = <i className="fa-solid fa-cart-shopping"></i>
+export const mobile = <i className="fa-solid fa-mobile-screen-button"></i>

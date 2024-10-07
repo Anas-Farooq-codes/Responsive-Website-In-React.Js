@@ -106,7 +106,7 @@ function Footer_Section() {
           <div className="mt-14 md:ml-14 py-4 text-gray-300 col-span-full text-center border-t-2">
             <p>
               Copyright &copy; {new Date().getFullYear()}
-              <span className="cursor-pointer"><a href="https://www.linkedin.com/in/anas-farooq06/"> CODY NERDS.</a> </span> All Rights
+              <span className="cursor-pointer hover:text-purple-500 transition-all"><a href="https://www.linkedin.com/in/anas-farooq06/"> Anas Codes.</a> </span> All Rights
               Reserved.
             </p>
           </div>

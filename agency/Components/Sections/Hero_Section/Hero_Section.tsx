@@ -60,14 +60,14 @@ const  navX = {
           <div className='gradient-purple mb-4 py-2 px-4 rounded-tl-[12px] rounded-br-[12px]'>
             <p className='font-medium text-white'>Digital Product Agency</p>
           </div>
-          <h1 className='text-3xl md:text-6xl'>Transforming Ideas into Digital Excellence</h1>
+          <h1 className='text-3xl md:text-6xl'>Bringing Your Ideas to Life Digitally</h1>
           <div className='mt-6 flex flex-col gap-10 lg:flex-row'>
             <Image src="/image--hero.jpg" alt="hero Image" width={700} height={400} className='rounded-lg mt-4 object-cover'/>
             <div className='lg:mt-12 flex flex-col justify-between text-gray-300'>
               <div className='flex flex-col gap-4 md:gap-6'>
-                <h3 className="text-white text-2xl font-semibold">Drive your Business forward!</h3>
+                <h3 className="text-white text-2xl font-semibold">Let’s Move Your Business Forward Together!</h3>
 <p>
-At CodyNerds, we specialize in creating powerful digital products that drive growth and elevate brands. Whether you’re launching a new app, redesigning a website, or developing a custom solution, our team blends creativity and technology to deliver innovative, user-centered experiences. Let's build something extraordinary together!
+At ByteWave, we believe in collaboration and innovation. We’re here to understand your goals and craft tailored digital solutions that help your business grow. From strategy to execution, we’re with you every step of the way, ensuring your success in a rapidly evolving digital world.
 </p>
 <div className='relative cta-button self-start'><Link href="/"  className='flex items-center gap-4'><span>Explore More</span>{arrowRight}<span className='blob'></span></Link></div>
               </div>
@@ -85,8 +85,8 @@ transition={{ duration: 0.3 }}
 variants={navX}
 >
 <div className='flex items-center gap-2 py-5 lg:py-0'>
-            <img src="/Cody-Nerds.webp" alt="logo" width={80} height={80} />
-            <h1>CODY NERDS</h1>
+            <img src="/Cody-Nerds.webp" alt="logo" width={160} height={160} />
+            
         </div>
       <nav className='bg-3 px-4 py-4 rounded-md'>
       <ul className='flex flex-col gap-4 text-white font-medium'>

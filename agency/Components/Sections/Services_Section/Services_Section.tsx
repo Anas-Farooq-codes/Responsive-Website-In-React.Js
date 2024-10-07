@@ -35,7 +35,7 @@ function Services_Section() {
               </ul>
             </div>
             <span
-              className="absolute top-0 left-0 bg-2 text-3xl font-semibold p-2 rounded-tr-[30px] rounded-bl-[30px] 
+              className="absolute top-0 left-0 bg-4 text-3xl font-semibold p-2 rounded-tr-[30px] rounded-bl-[30px] 
                   translate-x-[-50%] translate-y-[-50%]"
             >
               {++index}

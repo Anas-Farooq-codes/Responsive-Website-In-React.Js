@@ -1,4 +1,4 @@
-import { desktop, growth, innovation, building } from "./icons";
+import { desktop, growth, innovation, shield, mobile, ecommerce } from "./icons";
 import { Bungee_Outline } from "next/font/google";
 
 const bungee = Bungee_Outline ({
@@ -38,22 +38,22 @@ export const navLinks = [
 
 export const services: IService[] = [
     {
-      title: "Digital Strategy & Consulting",
+      title: "Digital Marketing",
       icon: growth,
       description:
-        "Develop a robust digital strategy that aligns with your business goals. Our expert consultants will guide you through the process, ensuring your brand stays ahead in the digital landscape.",
+        "Our data-driven digital marketing strategies enhance your online visibility and engagement, connecting you with your target audience effectively.",
       bulletPoints: [
-        "Tailored digital strategies for your brand",
-        "In-depth market and competitor analysis",
-        "Expert guidance on emerging trends",
-        "Alignment of digital initiatives with business goals",
+        "Targeted SEO strategies",
+        "Engaging content creation",
+        "Social media management",
+        "Pay-per-click advertising",
       ],
     },
     {
       title: "UX/UI Design & Web Development",
       icon: desktop,
       description:
-        "Create a seamless user experience with our expert UX/UI design and web development services. We craft visually stunning and highly functional websites that engage users and drive conversions.",
+        "We create intuitive and engaging digital experiences through user-centered design and responsive web development, ensuring accessibility and performance.",
       bulletPoints: [
         "User-centered UX/UI design",
         "Responsive and accessible web development",
@@ -62,51 +62,51 @@ export const services: IService[] = [
       ],
     },
     {
-      title: "Innovative Product Development",
+      title: "Branding & Strategy",
       icon: innovation,
       description:
-        "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+        "We help define and elevate your brand through comprehensive identity development and strategic market positioning, ensuring a cohesive brand story.",
       bulletPoints: [
-        "End-to-end product design and development",
-        "Rapid prototyping and iteration",
-        "Integration of cutting-edge technologies",
-        "Focus on user needs and market demands",
+        "Comprehensive brand identity development",
+        "Market research and analysis",
+        "Brand strategy and positioning",
+        "Visual design and collateral creation",
       ],
     },
     {
-        title: "Innovative Product Development",
-        icon: building,
+        title: "E-commerce Solutions",
+        icon: ecommerce,
         description:
-          "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+          "We build user-friendly e-commerce platforms that streamline shopping experiences, driving sales while ensuring security and usability.",
         bulletPoints: [
-          "End-to-end product design and development",
-          "Rapid prototyping and iteration",
-          "Integration of cutting-edge technologies",
-          "Focus on user needs and market demands",
+          "Customized e-commerce platform development",
+          "User-friendly shopping experiences",
+          "Payment gateway integration",
+          "Inventory management systems",
         ],
       },
       {
-        title: "Innovative Product Development",
-        icon: innovation,
+        title: "Mobile App Development",
+        icon: mobile,
         description:
-          "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+          "Our mobile app development services focus on creating engaging, user-friendly applications for both iOS and Android platforms, fostering customer loyalty.",
         bulletPoints: [
-          "End-to-end product design and development",
-          "Rapid prototyping and iteration",
-          "Integration of cutting-edge technologies",
-          "Focus on user needs and market demands",
+          "Native and cross-platform app developmenT",
+          "User-friendly interface design",
+          "App performance optimization",
+          "App store submission and support",
         ],
       },
       {
-        title: "Innovative Product Development",
-        icon: innovation,
+        title: "Cybersecurity Services",
+        icon: shield,
         description:
-          "Transform your ideas into market-ready products. Our team specializes in creating innovative solutions that drive growth and give you a competitive edge.",
+          "We provide scalable cloud solutions that enhance collaboration and accessibility, ensuring your team can work efficiently from anywhere.",
         bulletPoints: [
-          "End-to-end product design and development",
+          "Identify and evaluate vulnerabilities in your systems.",
           "Rapid prototyping and iteration",
-          "Integration of cutting-edge technologies",
-          "Focus on user needs and market demands",
+          "Protect your network infrastructure from cyber threats",
+          "Secure all devices accessing your network.",
         ],
       },
   ];
@@ -123,12 +123,12 @@ export const services: IService[] = [
     },
     {
       title: "Years Experience",
-      count: "04",
+      count: "5+",
       ff: bungee.className,
     },
     {
       title: "Team Members",
-      count: "05",
+      count: "15+",
     },
   ]
 
@@ -140,15 +140,23 @@ export const services: IService[] = [
         text: "Digital Marketing", outline: bungee.className
     },
     {
-        text: "Ui/Ux Design",
+        text: "Ui/UX Design",
     },
     {
         text: "SEO Optimization",
     },
     {
-        text: "Graphic Designing", outline: bungee.className
+        text: "E-commerce", outline: bungee.className
     },
-
+    {
+      text: "Branding & Strategy",
+  },
+  {
+    text: "App Development", outline: bungee.className
+},
+{
+  text: "Cybersecurity Services",
+},
 ]
 
 export const awards = [
@@ -233,14 +241,17 @@ export const footerNavLinks: { title: string; links: Link[] }[] = [
       { name: "Web Development", url: "/web-development" },
       { name: "Responsive Design", url: "/Responsive-Design" },
       { name: "UI/UX Design", url: "/ui-ux-design" },
-      { name: "SEO", url: "/seo" },
+      { name: "E-commerce", url: "/e-commerce" },
+      { name: "Digital Marketing", url: "/digital-marketing" },
+      { name: "App Development", url: "/app-development" },
+      { name: "Branding & Strategy", url: "/branding" },
     ],
   },
   {
     title: "Contact Info",
     links: [
       { name: "Email", email: "anasfarooq2006@gmail.com" },
-      { name: "Phone", phone: "+923179657473" },
+      { name: "Phone", phone: "+92 317 965 7473" },
     ],
   },
 ];
