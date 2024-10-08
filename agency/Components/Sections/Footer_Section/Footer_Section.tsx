@@ -15,10 +15,10 @@ function Footer_Section() {
         <div className="md:pt-[5rem] pb-16 md:w-[350px] flex flex-col gap-4 pr-8 md:border-r-2 sm:w-full">
           <div className="flex items-center gap-4">
             <Image
-              src="/Cody-Nerds.webp"
+              src="/ByteWave.webp"
               alt="logo"
-              width={180}
-              height={180}
+              width={260}
+              height={260}
             />
           </div>
           <p>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Title from '@/Components/Title/Title'
 import Button from '@/Components/Button/Button'
-import Image from 'next/image'
 import { check } from '@/utils/icons'
 import { aboutStats } from '@/utils/utils'
 
@@ -57,8 +56,8 @@ function About_Section() {
       </div>
       <div className="relative p-5">
         <div className="relative">
-          <Image
-            src="/images/image--team-1.jpg"
+          <img
+            src="/images/image--team-1.webp"
             alt="About Us"
             width={600}
             height={400}

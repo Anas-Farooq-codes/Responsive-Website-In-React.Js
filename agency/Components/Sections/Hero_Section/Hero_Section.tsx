@@ -28,7 +28,7 @@ const  navX = {
 
         <nav className='px-[18rem] fixed md:relative top-0 z-50 w-full shadow-md md:shadow-none flex items-center justify-between bg-1 border-b border-color-1 mq-sections'> 
         <div className='flex items-center gap-2 py-5 lg:py-0'>
-            <img src="/Cody-Nerds.webp" alt="logo" width={160} height={160} />
+            <img src="/ByteWave.webp" alt="logo" width={260} height={260} />
         </div>
 
         <ul className="hidden lg:flex items-center gap-9 text-white font-medium">
@@ -62,7 +62,7 @@ const  navX = {
           </div>
           <h1 className='text-3xl md:text-6xl'>Bringing Your Ideas to Life Digitally</h1>
           <div className='mt-6 flex flex-col gap-10 lg:flex-row'>
-            <Image src="/image--hero.jpg" alt="hero Image" width={700} height={400} className='rounded-lg mt-4 object-cover'/>
+          <img src="/image--hero.webp" alt="hero Image" width="700" height="400" className='rounded-lg mt-4 object-cover'/>
             <div className='lg:mt-12 flex flex-col justify-between text-gray-300'>
               <div className='flex flex-col gap-4 md:gap-6'>
                 <h3 className="text-white text-2xl font-semibold">Let’s Move Your Business Forward Together!</h3>
@@ -85,7 +85,7 @@ transition={{ duration: 0.3 }}
 variants={navX}
 >
 <div className='flex items-center gap-2 py-5 lg:py-0'>
-            <img src="/Cody-Nerds.webp" alt="logo" width={160} height={160} />
+            <img src="/ByteWave.webp" alt="logo" width={260} height={260} />
             
         </div>
       <nav className='bg-3 px-4 py-4 rounded-md'>

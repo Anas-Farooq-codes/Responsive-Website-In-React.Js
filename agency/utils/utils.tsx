@@ -134,28 +134,28 @@ export const services: IService[] = [
 
  export const baseText = [
     {
-        text: "Web Development",
+        text: "WEB DEVELOPMENT",
     },
     {
-        text: "Digital Marketing", outline: bungee.className
+        text: "DIGITAL MARKETING", outline: bungee.className
     },
     {
-        text: "Ui/UX Design",
+        text: "UI/UX DESIGN",
     },
     {
-        text: "SEO Optimization",
+        text: "SEO OPTIMIZATION",
     },
     {
         text: "E-commerce", outline: bungee.className
     },
     {
-      text: "Branding & Strategy",
+      text: "BRANDING & STRATEGY",
   },
   {
-    text: "App Development", outline: bungee.className
+    text: "APP DEVELOPMENT", outline: bungee.className
 },
 {
-  text: "Cybersecurity Services",
+  text: "CYBERSECURITY SERVICES",
 },
 ]
 

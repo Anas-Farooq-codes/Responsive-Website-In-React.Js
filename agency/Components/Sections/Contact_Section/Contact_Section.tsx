@@ -56,11 +56,11 @@ function ContactSection() {
         </form>
       </div>
       <div className="relative z-20 hidden lg:inline-block">
-        <Image
-          src="/images/engineer.png"
+        <img
+          src="/images/image--contact.webp"
           width={500}
           height={500}
-          alt="Engineer"
+          alt="team"
           className="object-cover w-full h-full absolute top-0 left-[3rem]"
         />
       </div>

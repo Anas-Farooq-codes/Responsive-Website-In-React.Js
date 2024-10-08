@@ -27,7 +27,8 @@ function page({ params }: Props) {
 
   return (
 
-      <section className="py-[5rem] mq-sections">
+      <section>
+        <div  className="py-[5rem] mq-sections">
         <Title title={portfolio.title} label={portfolio.category} />
         <div className="mt-[5rem]">
           <Image
@@ -95,34 +96,37 @@ function page({ params }: Props) {
             </div>
 
             <div>
-              <Link href={portfolio.details.footer} className="text-blue-400">
-                Check out the website
+              <Link href={portfolio.link} className="text-blue-400">
+                <p>{portfolio.details.footer}</p>
               </Link>
             </div>
 
             <div className="flex flex-col">
-              <div className="flex gap-8">
-                {portfolio.details.images
-                  .slice(0, imagesLength - 1)
-                  .map((image, index) => (
-                    <div key={index}>
-                      <Image
-                        src={image}
-                        alt={portfolio.title}
-                        className="rounded-md object-cover"
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="mt-8">
-                <Image
-                  src={portfolio.details.images[imagesLength - 1]}
-                  alt={portfolio.title}
-                  className="rounded-md object-cover"
-                />
-              </div>
-            </div>
+  <div className="flex gap-8">
+    {portfolio.details.images
+      .slice(0, imagesLength - 1)
+      .map((image, index) => {
+        return (
+          <div key={index}> {/* Add the key prop here */}
+            <Image
+              src={image}
+              alt={portfolio.title}
+              className="rounded-md object-cover"
+            />
           </div>
+        );
+      })}
+  </div>
+  <div className="mt-8">
+    <Image
+      src={portfolio.details.images[imagesLength - 1]}
+      alt={portfolio.title}
+      className="rounded-md object-cover"
+    />
+  </div>
+</div>
+          </div>
+        </div>
         </div>
         <Footer_Section/>
       </section>
