@@ -145,7 +145,7 @@ const portfolios: IPortfolio[] = [
           ],
           images: [horizonImage1, horizonImage2, horizonImage3],
           footer:
-            "Live link:https://weahterapp-cn.netlify.app",
+            "https://weahterapp-cn.netlify.app",
         },
       },
     ];
