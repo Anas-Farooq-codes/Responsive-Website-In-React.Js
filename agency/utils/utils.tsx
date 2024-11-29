@@ -223,6 +223,8 @@ export const faqs = [
 
 type Link = { name: string; url?: string; email?: string; phone?: string };
 
+
+
 export const footerNavLinks: { title: string; links: Link[] }[] = [
   {
     title: "About Us",
