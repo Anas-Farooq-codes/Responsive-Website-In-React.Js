@@ -255,3 +255,4 @@ export const footerNavLinks: { title: string; links: Link[] }[] = [
     ],
   },
 ];
+
