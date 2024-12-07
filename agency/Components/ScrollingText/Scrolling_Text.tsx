@@ -40,4 +40,5 @@ function Scrolling_Text({ direction }: ScrollingTextProps) {
   );
 }
 
+
 export default Scrolling_Text;
